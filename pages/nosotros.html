@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=es, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="../resources/Logo chico.png">
+    <title>Nosotros</title>
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <ul class="header__lista">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="compra-tu-auto.html">Compra tu auto</a></li>
+                <li><a href="vende-tu-auto.html">Vende tu auto</a></li>
+                <li><a href="financia-tu-auto.html">Financia tu auto</a></li>
+                <li><a href="#">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="titulo">
+            <h1>NOSOTROS</h1>
+        </section>
+        
+        <p class="contac">Contáctenos</p>
+        <span class="aviso">COMPLETÁ EL FORMULARIO</span>
+        <section  class="formulario">
+            <form method="post"><!-- // action indica donde guardar info // form formulario// post oculta dato sensibles //get guarda info sobre url -->          
+                <div class="form__nombre">     
+                    <label for="name">Nombre y Apellido:</label> <!-- label mensaje que se muestra antes del imput -->    
+                    <input type="text" name="user_name" required>  <!-- campo donde va informacion -->
+                </div>
+                <div class="form__dni">
+                    <label for="dni">Dni:</label>
+                    <input type="number" name="user_dni" required>
+                </div>   
+                <div class="form__telefono">
+                    <label for="telefono">Telefono:</label>
+                    <input type="number" name="user_tel" required>
+                </div>
+                <div class="form__email">     
+                    <label for="mail">Correo electrónico:</label>     
+                    <input type="email" name="user_mail" required>   
+                </div>   
+                <div class="form__msg">     
+                    <label for="msg">Mensaje:</label>     
+                    <textarea name="user_message"></textarea>   <!-- representa linea de control para texto sin formato -->
+                </div> 
+                <div class="button__form--autorizo">
+                    <input type="checkbox" name="user_autorizacion">
+                    <label for="autorizo">Autorizo a Kir Argentina a almacenar mis datos, asi como recibir informacion vía telefonica o email.</label>
+                </div>
+                <div class="button__form">
+                <input type="submit" value="Enviar"> 
+                <input type="reset"  value="Borrar">
+                </div> 
+            </form> 
+        </section>
+    </main>
+    
+    <footer><!-- Logos IG/WHATSAPP -->
+        <section class="footer__redes">
+                <img class="footer__img" src="https://w7.pngwing.com/pngs/16/46/png-transparent-made-in-kings-heath-instagram-facebook-female-graphy-instagram-logo-instagram-icon-text-trademark-magenta.png">
+                <img class="footer__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png">
+        </section>  
+        <p class="footer__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ducimus a debitis libero recusandae molestiae sequi deleniti, aut error quas aperiam dolorem, ratione nesciunt. Libero temporibus debitis nemo soluta maiores?
+            Deserunt reprehenderit veritatis cumque, at, omnis possimus ea minima, maiores minus aspernatur tempore fugiat necessitatibus quam provident? Eligendi quidem minima omnis enim debitis, placeat praesentium possimus distinctio fuga culpa quae.
+            Minima maxime eos tempora nihil architecto repellat quibusdam voluptatibus ex, ut perspiciatis ipsum accusamus porro at tempore doloribus sed sint maiores, quidem corrupti ipsa error. Nemo, error beatae? Ab, voluptate?
+            Earum unde itaque illo. Doloremque natus omnis repellendus ratione est soluta cumque voluptatum iste neque praesentium, vel ullam, odit animi! Facilis nulla soluta unde repudiandae blanditiis praesentium officia ullam cupiditate!
+            Dignissimos odio laborum dolorem, quas consectetur ipsum alias, ipsam molestias magni dolorum totam voluptates accusantium quidem repellendus et libero eius nam quos quod earum. Laborum suscipit explicabo animi ducimus dolores!</p>
+        <span class="footer__derechos">Todos los derechos reservados</span>
+    </footer>
+</body>
+</html>
