@@ -17,56 +17,74 @@
 </head>
 <body>
     <header>
-        <nav class="header__nav">
-            <ul class="header__lista">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="compra-tu-auto.html">Compra tu auto</a></li>
-                <li><a href="vende-tu-auto.html">Vende tu auto</a></li>
-                <li><a href="financia-tu-auto.html">Financia tu auto</a></li>
-                <li><a href="#">Nosotros</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-light header__nav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item header__lista">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item header__lista">
+                        <a class="nav-link" href="compra-tu-auto.html">Compra tu auto</a>
+                        </li>
+                        <li class="nav-item header__lista">
+                        <a class="nav-link" href="vende-tu-auto.html">Vende tu auto</a>
+                        </li>
+                        <li class="nav-item header__lista">
+                        <a class="nav-link" href="financia-tu-auto.html">Financia tu auto</a>
+                        </li>
+                        <li class="nav-item header__lista">
+                        <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
     </header>
     
     <main>
         <section class="titulo">
-            <h1>NOSOTROS</h1>
+            <h1>¿TENES DUDAS AL COMPRAR O VENDER TU VEHICULO?</h1>
+            <h2>En KIR es muy facil resolver tu duda</h2>
+            <h4>Coloca tu email, selecciona el tipo de duda y dejanos un breve descripcion de la misma</h4>
+            <span>RECIBIRAS UN CORRE A TU INBOX CON UN PLAZO DE 48HS.</span>
         </section>
-        
-        <p class="contac">Contáctenos</p>
-        <span class="aviso">COMPLETÁ EL FORMULARIO</span>
-        <section  class="formulario">
-            <form method="post"><!-- // action indica donde guardar info // form formulario// post oculta dato sensibles //get guarda info sobre url -->          
-                <div class="form__nombre">     
-                    <label for="name">Nombre y Apellido:</label> <!-- label mensaje que se muestra antes del imput -->    
-                    <input type="text" name="user_name" required>  <!-- campo donde va informacion -->
-                </div>
-                <div class="form__dni">
-                    <label for="dni">Dni:</label>
-                    <input type="number" name="user_dni" required>
-                </div>   
-                <div class="form__telefono">
-                    <label for="telefono">Telefono:</label>
-                    <input type="number" name="user_tel" required>
-                </div>
-                <div class="form__email">     
-                    <label for="mail">Correo electrónico:</label>     
-                    <input type="email" name="user_mail" required>   
-                </div>   
-                <div class="form__msg">     
-                    <label for="msg">Mensaje:</label>     
-                    <textarea name="user_message"></textarea>   <!-- representa linea de control para texto sin formato -->
-                </div> 
-                <div class="button__form--autorizo">
-                    <input type="checkbox" name="user_autorizacion">
-                    <label for="autorizo">Autorizo a Kir Argentina a almacenar mis datos, asi como recibir informacion vía telefonica o email.</label>
-                </div>
-                <div class="button__form">
-                <input type="submit" value="Enviar"> 
-                <input type="reset"  value="Borrar">
-                </div> 
-            </form> 
-        </section>
+        <form>
+        <!-- Email -->
+            <section class="mb-3 email form-select-sm w-50 mx-auto nosotros__form">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            </section>
+        <!-- Seleccione su duda -->
+            <section>
+                <select class="form-select form-select-sm w-25 mx-auto nosotros__form" aria-label=".form-select-sm example">
+                    <option selected>Selecciona tu tipo de duda</option>
+                    <option value="1">adasda</option>
+                    <option value="2">asdada</option>
+                    <option value="3">asdada</option>
+                </select>
+            </section>
+        <!-- Text Area -->    
+            <section class="mb-3 form-select-sm w-75 mx-auto nosotros__form">
+                <label for="validationTextarea" class="form-label"></label>
+                <textarea class="form-control" placeholder="Describenos tu duda" required></textarea>
+                <div class="invalid-feedback">Porfavor rellena este campo.</div>
+            </section>
+        <!-- autorizo a kir -->
+            <section class="form-check mb-3 checkbox">
+                <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+                <label class="form-check-label" for="validationFormCheck1">Autorizo a KIR Argentina a almacenar mis datos, asi como recibir informacion vía email.</label>
+                <div class="invalid-feedback">Example invalid feedback text</div>
+            </section>
+        <!-- BOTONES -->
+            <section class="button__form">
+                <input class="buttom_form--color" type="submit" value="Enviar"> 
+                <input class="buttom_form--color" type="reset"  value="Borrar">
+            </section>
+        </form> 
     </main>
     
     <footer><!-- Logos IG/WHATSAPP -->

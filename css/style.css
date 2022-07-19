@@ -13,7 +13,7 @@
     text-align: center;
     font-family: 'Indie Flower', cursive;
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
+    text-decoration: none !important;/* Para que no aparezca el renglon abajo de los a */
 }
 body/* overflow-y: overlay sirve para que la barra se sobreponga overflow: scroll para poner barra */{
     display: flex;
@@ -21,27 +21,11 @@ body/* overflow-y: overlay sirve para que la barra se sobreponga overflow: scrol
     background-color: rgb(255, 255, 255);
     overflow-y: scroll;
 }
-header{
-    position: sticky;
-    top: 0px;
-}
 .header__nav/* justify flex end para que la barra este sobre la derecha */{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(34, 111, 226);
+    background-color: rgb(34, 111, 226) !important;
     /* background-image: linear-gradient(90deg, rgba(252,250,250,1) 0%, rgba(203,243,251,1) 41%, rgba(0,212,255,1) 57%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%);*/
 } 
 
-.header__lista /* list-style none para que no aparezca el punto de viñeta */{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    list-style: none;
-    flex-grow: 3;
-}
-.header__lista>li/* el mayor indica hacia donde va aplicado */{
-    padding: 0 16px;
-}/* para que esten uno al lado del otro */
 .header__lista a{
     color: white;
 }
@@ -85,6 +69,15 @@ header{
 }
 .texto__destacado/* CAMBIAR TIPO DE LETRA- PENDIENTE */{
     font-family: sans-serif;/* Cambio la letra ya que tiene que ser llamativa */
+    font-size: 40px;/* Para que las letras sean mas grandes y llamatavias */
+    padding: 50px;/* Para que se separe del encabezado */
+    background-color: rgb(34, 111, 226);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.texto__destacado:hover{
+    transform: scale(1.03,1.03); /* Forma de transformacion zoom hacia delante  */
+    transition: all 0.5s;/* Tiempo de transicion */
     font-size: 50px;/* Para que las letras sean mas grandes y llamatavias */
     padding: 50px;/* Para que se separe del encabezado */
     background-color: rgb(34, 111, 226);
@@ -229,6 +222,24 @@ footer{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: gray;   
 }
+
+/* NOSOTROS */
+.nosotros__form{
+    padding: 10px;
+}
+.checkbox{
+    margin-left: 23rem;
+    margin-right: 23rem;
+}
+.button__form{
+    margin: 10px;
+}
+.buttom_form--color{
+    background-color: black;
+    color: white;
+    padding: 9px 27px;
+}
+
 
 /* MEDIA QUERIE DE CELULAR */
 /* SIEMPRE DEBE HABER UNA COLUMNA SI NO GALERIA CUADRICULADA QUE MAX ES 3 COLUMNAS*/
