@@ -24,10 +24,13 @@ body/* overflow-y: overlay sirve para que la barra se sobreponga overflow: scrol
 .header__nav/* justify flex end para que la barra este sobre la derecha */{
     background-color: rgb(34, 111, 226) !important;
     /* background-image: linear-gradient(90deg, rgba(252,250,250,1) 0%, rgba(203,243,251,1) 41%, rgba(0,212,255,1) 57%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%);*/
-} 
-
+}
 .header__lista a{
     color: white;
+}
+/* Feedback con el usuario, el va a saber que pagina clickeo */
+.header__lista a:visited{
+    color: rgb(56, 4, 151);
 }
 .titulo{
     text-align: center;
@@ -83,9 +86,6 @@ body/* overflow-y: overlay sirve para que la barra se sobreponga overflow: scrol
     background-color: rgb(34, 111, 226);
     margin-top: 8px;
     margin-bottom: 8px;
-}
-.texto__destacado:hover{
-    transform: scale(1.03,1.03);
 }
 .inicio__destacado{
     display: grid;/* Grid para poder separar en fracciones */
@@ -226,10 +226,6 @@ footer{
 /* NOSOTROS */
 .nosotros__form{
     padding: 10px;
-}
-.checkbox{
-    margin-left: 23rem;
-    margin-right: 23rem;
 }
 .button__form{
     margin: 10px;
