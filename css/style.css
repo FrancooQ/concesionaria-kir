@@ -67,7 +67,7 @@ body/* overflow-y: overlay sirve para que la barra se sobreponga overflow: scrol
     align-self: center;
     margin-bottom: 20px;
 }
-.texto__destacado{
+.texto__destacado/* CAMBIAR TIPO DE LETRA- PENDIENTE */{
     font-family: sans-serif;/* Cambio la letra ya que tiene que ser llamativa */
     font-size: 40px;/* Para que las letras sean mas grandes y llamatavias */
     padding: 50px;/* Para que se separe del encabezado */
@@ -78,6 +78,14 @@ body/* overflow-y: overlay sirve para que la barra se sobreponga overflow: scrol
 .texto__destacado:hover{
     transform: scale(1.03,1.03); /* Forma de transformacion zoom hacia delante  */
     transition: all 0.5s;/* Tiempo de transicion */
+    font-size: 50px;/* Para que las letras sean mas grandes y llamatavias */
+    padding: 50px;/* Para que se separe del encabezado */
+    background-color: rgb(34, 111, 226);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.texto__destacado:hover{
+    transform: scale(1.03,1.03);
 }
 .inicio__destacado{
     display: grid;/* Grid para poder separar en fracciones */
@@ -101,6 +109,7 @@ body/* overflow-y: overlay sirve para que la barra se sobreponga overflow: scrol
     width: 350px;
     height: 150px;
 }
+/* aca va boostrap */
 
 /* COMPRA TU AUTO */
 
