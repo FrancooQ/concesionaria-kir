@@ -1,0 +1,43 @@
+/* VENDE TU AUTO */
+
+.vende{
+    display: flex;
+    margin: 1rem;
+    height: 50vh;
+    .info__venta{
+        display: flex;  
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5rem; 
+    }
+}
+.titulo__destacado /* Titulo de ambas imagenes */{
+    font-size: 25px;
+}
+.img__muestra,.img__compra/* Medidas de las imagenes */{
+    width: 60%;
+    object-fit: cover;
+}
+.cotiza{
+    display: flex;
+    margin: 1rem;
+    height: 50vh;
+    .info__venta--beneficios{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5rem; 
+        .listado{
+            font-size: 20px;
+            & li::marker{
+                color: blueviolet;
+            }
+            &__comentario{
+                font-size: 16px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: gray;   
+            }
+        }   
+    }
+}
+

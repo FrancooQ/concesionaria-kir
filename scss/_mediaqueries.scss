@@ -1,0 +1,106 @@
+/* MEDIA QUERIE DE CELULAR */
+/* SIEMPRE DEBE HABER UNA COLUMNA SI NO GALERIA CUADRICULADA QUE MAX ES 3 COLUMNAS*/
+
+@media (max-width: 575px){
+    
+    /* MODIFICADOR DE NAV */
+    
+    .header__nav{
+        flex-direction: column;
+        &__lista /* list-style none para que no aparezca el punto de viñeta */{
+            flex-direction: column; 
+            justify-content: center;
+            line-height: 2rem;/* hace que las lineas de la nav queden separadas */
+            align-items: center;    
+            flex-grow: 0; 
+        }
+        
+    }
+       
+    /* VENDE TU AUTO */
+    
+    .vende{
+        flex-direction: column;
+        height: auto;
+    }
+    .info__venta, .info__venta--beneficios{
+        padding: 2rem;
+        padding-bottom: 3rem;
+        gap: 10px;
+    }
+    .cotiza{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .vende *, .cotiza *{
+        width: 100%;
+    }
+}
+
+/* MEDIA QUERIE DE TABLET */
+
+@media (max-width: 992px){
+    
+    /* MODIFICADOR DE NAV */
+    
+    .header__nav{
+        flex-direction: column;    
+        &__lista /* list-style none para que no aparezca el punto de viñeta */{
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;    
+            flex-grow: 3;   
+        }
+    }
+
+    /* INICIO */
+
+    .inicio__destacado{
+        grid-template-columns: 1fr;
+    }
+    .main__img--promos {
+        width: 100%;
+        height: auto;
+    }
+    .encabezado{
+        flex-direction: column;
+        height: auto;
+    }
+    .encabezado__img,.encabezado .info{
+        width: 100%;
+    }
+
+    /* COMPRA TU AUTO */
+    
+    .img__auto{
+        width: 100%;
+    }
+    .video__auto{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3/2;
+    }
+    .descrip__auto div{
+        width: 100%;
+    }
+    
+    /* VENDE TU AUTO */
+    
+    .vende{
+        flex-direction: column;
+        height: auto;
+    }
+    .info__venta, .info__venta--beneficios{
+        padding: 2rem;
+        padding-bottom: 3rem;
+        gap: 10px;
+    }
+    .cotiza{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .vende *, .cotiza *{
+        width: 100%;
+    }
+
+}

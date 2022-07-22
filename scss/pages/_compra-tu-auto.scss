@@ -1,0 +1,57 @@
+/* COMPRA TU AUTO */
+
+.titulo__auto{
+    background-color: $color-principal;
+}
+.descrip__auto/* flex para crear caja/row lo pone en vertical/wrap acomoda cuando se achica/justify evenly para alinear el salto entre ellos*/{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    gap: 10px;
+    & div/* use padding con rem para visual */{ 
+        background-color: $color-principal ;
+        padding: 0.8rem;
+        & h5{
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+    & span/* use display block para q sea un bloque*/{
+        display: block;
+    }
+}
+
+.autos__venta--img/* seccion de las fotos de los autos a vender */{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.img__auto/* imagen de los autos */{
+    height: 400px; 
+    width: 700px;
+    object-fit: cover;
+}
+
+.autos__venta--vid/* seccion videos de los autos a vender */{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    & h5{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+.video__auto/* video de los autos */{
+    height: 400px;
+    width: 700px;
+    object-fit: cover;
+}
+
+

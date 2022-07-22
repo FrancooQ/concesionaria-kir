@@ -1,0 +1,48 @@
+/* Padding: Distancia entre el borde y el contenido//se le pone a las etiquetas p */
+/* Margin: Distancia entre el borde y el afuera de la caja */
+/* margin: UPpx; RIGHTpx; DOWNpx; LEFTpx; */
+/* Padding: 4 coordenadas 0 0 0 0 // 16px */
+/* box-sizing  */
+/* VIERPORT WIDTH HEIGHT*/
+/* VIERPORT WIDTH -> 100VW */
+/* VIERPORT HEIGHT -> 100VH  */
+@import "variables";
+@import "pages/index";
+@import "pages/compra-tu-auto";
+@import "pages/vende-tu-auto";
+@import "pages/financia-tu-auto";
+@import "pages/nosotros";
+@import "nav";
+@import "footer";
+
+
+*{
+    margin: 0px; /* MARGEN EXTERNO */
+    padding: 0px; /* MARGEN INTERNO */
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none !important;/* Para que no aparezca el renglon abajo de los a */
+}
+body/* overflow-y: overlay sirve para que la barra se sobreponga overflow: scroll para poner barra */{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    overflow-y: scroll;
+}
+.info *{
+    align-self: center;
+    margin-bottom: 20px;
+}
+.titulo{
+    text-align: center;
+}
+
+
+@import "mediaqueries";
+
+
+
+
+
