@@ -35,7 +35,15 @@
     .vende *, .cotiza *{
         width: 100%;
     }
+    
+    /* NOSOTROS */
+    
+    .trabaja__img{
+        display: none; /* Desaparezco la imagen */
+    }
+
 }
+
 
 /* MEDIA QUERIE DE TABLET */
 
@@ -103,4 +111,5 @@
         width: 100%;
     }
 
+    
 }

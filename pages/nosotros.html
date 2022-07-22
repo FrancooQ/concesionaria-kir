@@ -47,16 +47,19 @@
     </header>
     
     <main>
+        <section class="portada">
+            <img class="img-fluid portada--img" src="../resources/portadaContactanos.jpg" alt="contactanos">
+        </section>
         <section class="titulo">
             <h1>¿TENES DUDAS AL COMPRAR O VENDER TU VEHICULO?</h1>
             <h2>En KIR es muy facil resolver tu duda</h2>
-            <h4>Coloca tu email, selecciona el tipo de duda y dejanos un breve descripcion de la misma</h4>
+            <h3>Coloca tu email, selecciona el tipo de duda y dejanos un breve descripcion de la misma</h4>
             <span>RECIBIRAS UN CORRE A TU INBOX CON UN PLAZO DE 48HS.</span>
         </section>
         <form>
         <!-- Email -->
             <section class="mb-3 email form-select-sm w-50 mx-auto nosotros__form">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
             </section>
         <!-- Seleccione su duda -->
@@ -85,20 +88,74 @@
                 <input class="button__form--color" type="submit" value="Enviar"> 
                 <input class="button__form--color" type="reset"  value="Borrar">
             </section>
-        </form> 
+        </form>
+        <!-- Trabaja con nosotros -->
+        <section class="container-fluid rrhh">
+            <article class="row">
+                <div class="col-xs-12 col-md-12 col-lg-6 rrhh__trabaja"> <!-- col-xs-12 etc, es para hacer responsive con boostrap -->
+                    <h3>¿Quieres trabajar con nosotros?</h3>
+                    <form>
+                        <!-- Nombre y Apellido -->
+                        <div class="row w-50 mx-auto">
+                            <div class="col">
+                            <input type="text" class="form-control" placeholder="Nombre y Apellido" aria-label="First name">
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="mb-3 email form-select-sm">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                        </div>
+                        <!-- Contanos de vos -->
+                        <div class="mb-3 form-select-sm">
+                            <label for="validationTextarea" class="form-label">Acerca de vos</label>
+                            <textarea class="form-control" placeholder="" required></textarea>
+                            <div class="invalid-feedback">Porfavor rellena este campo.</div>
+                        </div>
+                        <!-- Coloca tu cv -->
+                        <div class="mb-3 w-25 mx-auto">
+                            <label for="formFileSm" class="form-label">Dejanos tu cv</label>
+                            <input class="form-control form-control-sm" id="formFileSm" type="file">
+                        </div>
+                        <!-- Botones -->
+                        <div class="button__form">
+                            <input class="button__form--color" type="submit" value="Enviar"> 
+                            <input class="button__form--color" type="reset"  value="Borrar">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-6 rrhh__trabaja">
+                    <img class="img-fluid rrhh__trabaja--img" src="../resources/TrabajaConNosotros.jpg">
+                </div>
+            </article>
+        </section>
     </main>
     
     <footer><!-- Logos IG/WHATSAPP -->
+        <div class="footer__indice">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="compra-tu-auto.html">Compra tu auto</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="vende-tu-auto.html">Vende tu auto</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="financia-tu-auto.html">Financia tu auto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                </li>
+            </ul>
+        </div>
         <section class="footer__redes">
-                <img class="footer__img" src="https://w7.pngwing.com/pngs/16/46/png-transparent-made-in-kings-heath-instagram-facebook-female-graphy-instagram-logo-instagram-icon-text-trademark-magenta.png">
-                <img class="footer__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png">
+                <img class="footer__iconos" src="https://w7.pngwing.com/pngs/16/46/png-transparent-made-in-kings-heath-instagram-facebook-female-graphy-instagram-logo-instagram-icon-text-trademark-magenta.png">
+                <img class="footer__iconos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png">
         </section>  
-        <p class="footer__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ducimus a debitis libero recusandae molestiae sequi deleniti, aut error quas aperiam dolorem, ratione nesciunt. Libero temporibus debitis nemo soluta maiores?
-            Deserunt reprehenderit veritatis cumque, at, omnis possimus ea minima, maiores minus aspernatur tempore fugiat necessitatibus quam provident? Eligendi quidem minima omnis enim debitis, placeat praesentium possimus distinctio fuga culpa quae.
-            Minima maxime eos tempora nihil architecto repellat quibusdam voluptatibus ex, ut perspiciatis ipsum accusamus porro at tempore doloribus sed sint maiores, quidem corrupti ipsa error. Nemo, error beatae? Ab, voluptate?
-            Earum unde itaque illo. Doloremque natus omnis repellendus ratione est soluta cumque voluptatum iste neque praesentium, vel ullam, odit animi! Facilis nulla soluta unde repudiandae blanditiis praesentium officia ullam cupiditate!
-            Dignissimos odio laborum dolorem, quas consectetur ipsum alias, ipsam molestias magni dolorum totam voluptates accusantium quidem repellendus et libero eius nam quos quod earum. Laborum suscipit explicabo animi ducimus dolores!</p>
-        <span class="footer__derechos">Todos los derechos reservados</span>
+        <span class="footer__derechos">FrancooQ © Todos los derechos reservados desde 2022. </span>
     </footer>
 
     <!-- JavaScript-->  
