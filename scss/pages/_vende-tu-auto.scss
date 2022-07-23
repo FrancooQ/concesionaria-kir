@@ -12,7 +12,7 @@
     }
 }
 .titulo__destacado /* Titulo de ambas imagenes */{
-    font-size: 25px;
+    font-size: 30px;
 }
 .img__muestra,.img__compra/* Medidas de las imagenes */{
     width: 60%;
@@ -29,10 +29,15 @@
         padding: 3rem; 
         .listado{
             font-size: 20px;
+            & li{
+                text-align: left;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            }
             & li::marker{
                 color: blueviolet;
             }
             &__comentario{
+                text-align: left !important;
                 font-size: 16px;
                 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 color: gray;   

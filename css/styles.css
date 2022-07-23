@@ -149,7 +149,7 @@
     padding: 5rem; }
 
 .titulo__destacado {
-  font-size: 25px; }
+  font-size: 30px; }
 
 .img__muestra, .img__compra {
   width: 60%;
@@ -166,9 +166,13 @@
     padding: 3rem; }
     .cotiza .info__venta--beneficios .listado {
       font-size: 20px; }
+      .cotiza .info__venta--beneficios .listado li {
+        text-align: left;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
       .cotiza .info__venta--beneficios .listado li::marker {
         color: blueviolet; }
       .cotiza .info__venta--beneficios .listado__comentario {
+        text-align: left !important;
         font-size: 16px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: gray; }
@@ -204,10 +208,10 @@
 .header__nav {
   background-color: #226fe2 !important;
   /* background-image: linear-gradient(90deg, rgba(252,250,250,1) 0%, rgba(203,243,251,1) 41%, rgba(0,212,255,1) 57%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%);*/ }
-  .header__nav__lista a {
+  .header__nav .header__lista a {
     color: white; }
-    .header__nav__lista a:visited {
-      color: #380497; }
+  .header__nav .header__lista a:visited {
+    color: #4b17aa; }
 
 /* FOOTER */
 footer {
@@ -230,6 +234,7 @@ footer {
   text-align: center;
   font-family: 'Indie Flower', cursive;
   font-family: 'Roboto', sans-serif;
+  color: black;
   text-decoration: none !important;
   /* Para que no aparezca el renglon abajo de los a */ }
 
@@ -273,7 +278,7 @@ body {
   .vende *, .cotiza * {
     width: 100%; }
   /* NOSOTROS */
-  .trabaja__img {
+  .rrhh__trabaja--img {
     display: none;
     /* Desaparezco la imagen */ } }
 

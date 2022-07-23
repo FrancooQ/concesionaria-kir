@@ -3,11 +3,11 @@
 .header__nav/* justify flex end para que la barra este sobre la derecha */{
     background-color: $color-principal !important;
     /* background-image: linear-gradient(90deg, rgba(252,250,250,1) 0%, rgba(203,243,251,1) 41%, rgba(0,212,255,1) 57%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%);*/
-    &__lista a{
+    .header__lista a{
         color: white;
-        &:visited /* Feedback con el usuario, el va a saber que pagina clickeo */{
-            color: rgb(56, 4, 151);
-        }
+    }
+    .header__lista a:visited /* Feedback con el usuario, el va a saber que pagina clickeo */{
+        color: rgb(75, 23, 170);
     }
 }
 
