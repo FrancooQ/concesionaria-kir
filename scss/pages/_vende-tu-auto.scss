@@ -13,6 +13,8 @@
 }
 .titulo__destacado /* Titulo de ambas imagenes */{
     font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: $color-principal;
 }
 .img__muestra,.img__compra/* Medidas de las imagenes */{
     width: 60%;
@@ -45,4 +47,24 @@
         }   
     }
 }
+.venta__auto{
+    margin: 10px;
+    &--titulo{
+        font-size: 25px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: $color-principal;
+        &adv{
+            font-size: 16px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+        }
+    }
+    &--contacto{
+        margin: 10px;
+    }
+    &--botones{
+        margin: 10px;
+    }
+}
+
 
