@@ -6,5 +6,5 @@
 <li>HTML5</li>
 <li>CSS3</li>
 <li>Boostrap</li>
-<li>SAsS</li>
+<li>SASS</li>
 </ul>
