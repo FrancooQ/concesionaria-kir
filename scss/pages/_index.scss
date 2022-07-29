@@ -7,7 +7,7 @@
         object-fit:cover;
         width: 50%;
     }
-    & .info{
+    .info{
         display: flex;  
         flex-direction: column;
         justify-content: space-between;/* space-between espacio entre los hijos// flex start hacia la izquierda(en el eje cross) */
@@ -58,7 +58,7 @@
         align-items: center;
         border-radius: 10px;
     }
-    & div{
+     div{
         object-fit: cover;   
         width: 100%;
         height: auto;

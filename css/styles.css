@@ -8,8 +8,31 @@
 /* VIERPORT WIDTH -> 100VW */
 /* VIERPORT HEIGHT -> 100VH  */
 /* INFORMACION QUE PODEMOS REUTILIZAR TAMAÑO, LETRAS, COLORES */
-/* $color-secundario: ; */
-/* $medidas__img--autos: ; */
+/* 1REM : 16px */
+/* CONDICIONAL IF */
+/* Codigo en caso de que se cumpla */
+/* MAP = COLECCION DE VARIABLES (CLAVE-VALOR)(KEY-VALUE) */
+/* EACH - CADA UNO */
+.color-h1 {
+  color: #226fe2;
+  font-size: 32px; }
+
+.color-h2 {
+  color: black;
+  font-size: 28px; }
+
+/* Navegacion */
+.header__nav {
+  background-color: #226fe2;
+  /* background-image: linear-gradient(90deg, rgba(252,250,250,1) 0%, rgba(203,243,251,1) 41%, rgba(0,212,255,1) 57%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%);*/ }
+  .header__nav .header__lista a {
+    color: white; }
+  .header__nav .header__lista a:visited {
+    color: #4b17aa; }
+
+nav ul {
+  margin-left: auto !important; }
+
 /* INICIO */
 .encabezado {
   display: flex;
@@ -183,11 +206,11 @@
   margin: 10px; }
   .venta__auto--titulo {
     font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: #226fe2; }
     .venta__auto--tituloadv {
       font-size: 16px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       color: black; }
   .venta__auto--contacto {
     margin: 10px; }
@@ -221,15 +244,6 @@
     .rrhh__trabaja--img {
       padding-bottom: 10px; }
 
-/* Navegacion */
-.header__nav {
-  background-color: #226fe2;
-  /* background-image: linear-gradient(90deg, rgba(252,250,250,1) 0%, rgba(203,243,251,1) 41%, rgba(0,212,255,1) 57%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%);*/ }
-  .header__nav .header__lista a {
-    color: white; }
-  .header__nav .header__lista a:visited {
-    color: #4b17aa; }
-
 /* FOOTER */
 footer {
   display: flex;
@@ -249,8 +263,7 @@ footer {
   /* MARGEN INTERNO */
   box-sizing: border-box;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: black;
   text-decoration: none !important;
   /* Para que no aparezca el renglon abajo de los a */ }
@@ -264,9 +277,6 @@ body {
 .info * {
   align-self: center;
   margin-bottom: 20px; }
-
-.titulo {
-  text-align: center; }
 
 /* MEDIA QUERIE DE CELULAR */
 /* SIEMPRE DEBE HABER UNA COLUMNA SI NO GALERIA CUADRICULADA QUE MAX ES 3 COLUMNAS*/

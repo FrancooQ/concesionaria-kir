@@ -13,15 +13,15 @@
     font-size: 20px;
     margin: 20px;
     gap: 10px;
-    & div/* use padding con rem para visual */{ 
+    div/* use padding con rem para visual */{ 
         background-color: $color-principal ;
         padding: 0.8rem;
-        & h5{
+        h5{
             text-align: center;
             font-size: 30px;
         }
     }
-    & span/* use display block para q sea un bloque*/{
+    span/* use display block para q sea un bloque*/{
         display: block;
     }
 }
@@ -43,7 +43,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
-    & h5{
+    h5{
         text-align: center;
         font-size: 30px;
     }

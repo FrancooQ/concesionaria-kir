@@ -5,7 +5,7 @@ footer{
     flex-wrap: wrap;
     margin-top: auto;
     color: white;
-    background-color: rgb(0, 0, 0);
+    background-color: $color-secundario;
     .footer{
         &__iconos{
             display: flex;

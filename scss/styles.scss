@@ -7,12 +7,13 @@
 /* VIERPORT WIDTH -> 100VW */
 /* VIERPORT HEIGHT -> 100VH  */
 @import "variables";
+@import "operators";
+@import "nav";
 @import "pages/index";
 @import "pages/compra-tu-auto";
 @import "pages/vende-tu-auto";
 @import "pages/financia-tu-auto";
 @import "pages/nosotros";
-@import "nav";
 @import "footer";
 
 
@@ -21,9 +22,8 @@
     padding: 0px; /* MARGEN INTERNO */
     box-sizing: border-box;
     text-align: center;
-    font-family: 'Indie Flower', cursive;
-    font-family: 'Roboto', sans-serif;
-    color: black;
+    font-family: $font-principal;
+    color: $color-secundario;
     text-decoration: none !important;/* Para que no aparezca el renglon abajo de los a */
 }
 body/* overflow-y: overlay sirve para que la barra se sobreponga overflow: scroll para poner barra */{
@@ -36,10 +36,6 @@ body/* overflow-y: overlay sirve para que la barra se sobreponga overflow: scrol
     align-self: center;
     margin-bottom: 20px;
 }
-.titulo{
-    text-align: center;
-}
-
 
 @import "mediaqueries";
 

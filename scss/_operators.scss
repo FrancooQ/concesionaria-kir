@@ -1,0 +1,28 @@
+/* CONDICIONAL IF */
+
+@if (condicion a cumplir) {
+    /* Codigo en caso de que se cumpla */
+}   @else {
+    /* Codigo en caso de que NO se cumpla */
+}
+
+/* MAP = COLECCION DE VARIABLES (CLAVE-VALOR)(KEY-VALUE) */
+
+$titulos: (
+    h1: $color-principal,
+    h2: $color-secundario
+);
+
+/* EACH - CADA UNO */
+
+@each $name, $color in $titulos{
+    .color-#{$name} {
+        color: #{$color};
+        @if ($name == h1){
+            font-size: 32px;
+        } @else {
+            font-size: 28px;
+        }
+    }
+}
+
