@@ -51,21 +51,48 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;/* Es el salto que da entre img y img */
     margin: 15px;
-    .destacado__promo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-    }
-     div{
-        object-fit: cover;   
+    &--promo{
+        object-fit: cover;
+        position: relative;   
         width: 100%;
         height: auto;
+        &:hover .promo__img {
+            opacity: 0.3;
+        }
+          
+        &:hover .middle {
+            opacity: 1;
+        }
+        .promo__img {
+            opacity: 1;
+            object-fit: cover;   
+            width: 350px;
+            height: 200px;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center; 
+            .text {
+                background-color: $color-principal;
+                color: white;
+                font-size: 16px;
+                padding: 16px 32px;
+            }
+          }
    }
 
 }
-.main__img--promos{
-    width: 350px;
-    height: 150px;
-}
+ 
+
+  
+
+  
+

@@ -97,20 +97,36 @@ nav ul {
   gap: 15px;
   /* Es el salto que da entre img y img */
   margin: 15px; }
-  .inicio__destacado .destacado__promo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px; }
-  .inicio__destacado div {
+  .inicio__destacado--promo {
     object-fit: cover;
+    position: relative;
     width: 100%;
     height: auto; }
-
-.main__img--promos {
-  width: 350px;
-  height: 150px; }
+    .inicio__destacado--promo:hover .promo__img {
+      opacity: 0.3; }
+    .inicio__destacado--promo:hover .middle {
+      opacity: 1; }
+    .inicio__destacado--promo .promo__img {
+      opacity: 1;
+      object-fit: cover;
+      width: 350px;
+      height: 200px;
+      transition: .5s ease;
+      backface-visibility: hidden; }
+    .inicio__destacado--promo .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center; }
+      .inicio__destacado--promo .middle .text {
+        background-color: #226fe2;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px; }
 
 /* COMPRA TU AUTO */
 .titulo__auto {
@@ -322,7 +338,7 @@ body {
   /* INICIO */
   .inicio__destacado {
     grid-template-columns: 1fr; }
-  .main__img--promos {
+  .promo__img {
     width: 100%;
     height: auto; }
   .encabezado {
