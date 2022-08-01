@@ -45,6 +45,33 @@
         margin-bottom: 8px;
     }
 }
+/* RAZONES PARA COMPRAR */
+.razones{
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    &--comprar{
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        & span {
+            color: white !important;
+        }
+    }
+}
+
+/* CAROUSEL Y PROMOS */
+
+.carousel-item img{
+    object-fit: cover;
+    object-position: top;
+    height: 500px;
+}
+
 
 .inicio__destacado{
     display: grid;/* Grid para poder separar en fracciones */
@@ -89,6 +116,39 @@
           }
    }
 
+}
+/* VENDE EN UN DIA */
+.main__vende{
+    display: flex;
+    background-color: $color-principal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    &--position{
+        position: relative;
+        li{
+            text-align: left;
+        }
+    }
+    h3 {
+        font-family: $font-principal;
+        color: white;
+        margin-top: 1rem;
+    }
+    li {
+        list-style: none;
+        margin-top: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+    .boton{
+        display: flex;
+        margin-inline: auto;
+        width: fit-content;
+        margin-top: auto;
+        padding: 12px 30px;
+        border-radius: 8px;
+    }
 }
  
 

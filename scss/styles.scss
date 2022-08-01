@@ -32,6 +32,11 @@ body/* overflow-y: overlay sirve para que la barra se sobreponga overflow: scrol
     background-color: rgb(255, 255, 255);
     overflow-y: scroll;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
 .info *{
     align-self: center;
     margin-bottom: 20px;
