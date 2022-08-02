@@ -282,6 +282,9 @@ nav ul {
   .venta__auto--botones {
     margin: 10px; }
 
+.financia__tu--auto {
+  margin-bottom: 30px; }
+
 /* NOSOTROS */
 .portada--img {
   width: 100%;
@@ -361,6 +364,11 @@ main {
       /* hace que las lineas de la nav queden separadas */
       align-items: center;
       flex-grow: 0; }
+  /* INDEX */
+  .carousel-item img {
+    object-fit: cover;
+    object-position: left;
+    height: 500px; }
   /* VENDE TU AUTO */
   .vende {
     flex-direction: column;
