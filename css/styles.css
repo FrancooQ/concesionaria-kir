@@ -68,6 +68,7 @@ nav ul {
     /* Tiempo de transicion */ }
 
 .texto__destacado {
+  color: black;
   font-family: sans-serif;
   /* Cambio la letra ya que tiene que ser llamativa */
   font-size: 40px;
@@ -154,6 +155,7 @@ nav ul {
 .main__vende {
   display: flex;
   background-color: #226fe2;
+  color: black;
   margin-top: 20px;
   margin-bottom: 20px;
   overflow: hidden; }
@@ -169,7 +171,7 @@ nav ul {
     list-style: none;
     margin-top: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px; }
+    font-size: 25px; }
   .main__vende .boton {
     display: flex;
     margin-inline: auto;
@@ -283,7 +285,7 @@ nav ul {
     margin: 10px; }
 
 .financia__tu--auto {
-  margin-bottom: 30px; }
+  margin-bottom: 32px; }
 
 /* NOSOTROS */
 .portada--img {
@@ -312,18 +314,6 @@ nav ul {
     .rrhh__trabaja--img {
       padding-bottom: 10px; }
 
-/* FOOTER */
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: auto;
-  color: white;
-  background-color: black; }
-  footer .footer__iconos {
-    display: flex;
-    width: 20px;
-    height: 20px; }
-
 * {
   margin: 0px;
   /* MARGEN EXTERNO */
@@ -332,7 +322,6 @@ footer {
   box-sizing: border-box;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  color: black;
   text-decoration: none !important;
   /* Para que no aparezca el renglon abajo de los a */ }
 
@@ -340,7 +329,8 @@ body {
   display: flex;
   flex-direction: column;
   background-color: white;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  line-height: 1.5; }
 
 main {
   display: flex;
@@ -350,6 +340,11 @@ main {
 .info * {
   align-self: center;
   margin-bottom: 20px; }
+
+/* FOOTER */
+.footer {
+  background-color: black !important;
+  color: white !important; }
 
 /* MEDIA QUERIE DE CELULAR */
 /* SIEMPRE DEBE HABER UNA COLUMNA SI NO GALERIA CUADRICULADA QUE MAX ES 3 COLUMNAS*/

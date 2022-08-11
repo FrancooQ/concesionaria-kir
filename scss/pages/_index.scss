@@ -29,6 +29,7 @@
 }
 
 .texto__destacado/* CAMBIAR TIPO DE LETRA- PENDIENTE */{
+    color: $color-secundario;
     font-family: sans-serif;/* Cambio la letra ya que tiene que ser llamativa */
     font-size: 40px;/* Para que las letras sean mas grandes y llamatavias */
     padding: 50px;/* Para que se separe del encabezado */
@@ -121,6 +122,7 @@
 .main__vende{
     display: flex;
     background-color: $color-principal;
+    color: $color-secundario;
     margin-top: 20px;
     margin-bottom: 20px;
     overflow: hidden;
@@ -139,7 +141,7 @@
         list-style: none;
         margin-top: 20px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 20px;
+        font-size: 25px;
     }
     .boton{
         display: flex;

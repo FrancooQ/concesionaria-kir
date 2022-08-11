@@ -14,7 +14,7 @@
 @import "pages/vende-tu-auto";
 @import "pages/financia-tu-auto";
 @import "pages/nosotros";
-@import "footer";
+
 
 
 *{
@@ -23,7 +23,6 @@
     box-sizing: border-box;
     text-align: center;
     font-family: $font-principal;
-    color: $color-secundario;
     text-decoration: none !important;/* Para que no aparezca el renglon abajo de los a */
 }
 body/* overflow-y: overlay sirve para que la barra se sobreponga overflow: scroll para poner barra */{
@@ -31,6 +30,7 @@ body/* overflow-y: overlay sirve para que la barra se sobreponga overflow: scrol
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     overflow-y: scroll;
+    line-height: 1.5;
 }
 main{
     display: flex;
@@ -42,6 +42,7 @@ main{
     margin-bottom: 20px;
 }
 
+@import "footer";
 @import "mediaqueries";
 
 
