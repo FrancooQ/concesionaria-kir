@@ -182,7 +182,8 @@ nav ul {
 
 /* COMPRA TU AUTO */
 .titulo__auto {
-  background-color: #226fe2; }
+  background-color: #226fe2;
+  color: white; }
 
 .descrip__auto {
   display: flex;
@@ -200,6 +201,8 @@ nav ul {
     .descrip__auto div h5 {
       text-align: center;
       font-size: 30px; }
+    .descrip__auto div p {
+      color: white; }
   .descrip__auto span {
     display: block; }
 
@@ -364,11 +367,14 @@ main {
     object-fit: cover;
     object-position: left;
     height: 500px; }
+  .img-fluid {
+    display: none;
+    /* Desaparezco la imagen */ }
   /* VENDE TU AUTO */
   .vende {
     flex-direction: column;
     height: auto; }
-  .info__venta, .info__venta--beneficios {
+  .info__venta--beneficios {
     padding: 2rem;
     padding-bottom: 3rem;
     gap: 10px; }
@@ -377,6 +383,8 @@ main {
     height: auto; }
   .vende *, .cotiza * {
     width: 100%; }
+  .vendeinfo__venta {
+    padding: 1rem; }
   /* NOSOTROS */
   .rrhh__trabaja--img {
     display: none;
@@ -416,7 +424,7 @@ main {
   .vende {
     flex-direction: column;
     height: auto; }
-  .info__venta, .info__venta--beneficios {
+  .info__venta--beneficios {
     padding: 2rem;
     padding-bottom: 3rem;
     gap: 10px; }
@@ -424,4 +432,6 @@ main {
     flex-direction: column-reverse;
     height: auto; }
   .vende *, .cotiza * {
-    width: 100%; } }
+    width: 100%; }
+  .vende .info__venta {
+    padding: 1rem; } }

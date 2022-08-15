@@ -24,6 +24,9 @@
         object-position: left;
         height: 500px;
     }
+    .img-fluid {
+        display: none; /* Desaparezco la imagen */
+    }
        
     /* VENDE TU AUTO */
     
@@ -31,10 +34,12 @@
         flex-direction: column;
         height: auto;
     }
-    .info__venta, .info__venta--beneficios{
+    .info__venta {
+        &--beneficios{
         padding: 2rem;
         padding-bottom: 3rem;
         gap: 10px;
+        }
     }
     .cotiza{
         flex-direction: column-reverse;
@@ -42,6 +47,11 @@
     }
     .vende *, .cotiza *{
         width: 100%;
+    }
+    .vende{
+        &info__venta{
+        padding: 1rem;
+        }
     }
     
     /* NOSOTROS */
@@ -85,7 +95,6 @@
     .encabezado__img,.encabezado .info{
         width: 100%;
     }
-
     /* COMPRA TU AUTO */
     
     .img__auto{
@@ -106,10 +115,12 @@
         flex-direction: column;
         height: auto;
     }
-    .info__venta, .info__venta--beneficios{
+    .info__venta{
+        &--beneficios{
         padding: 2rem;
         padding-bottom: 3rem;
         gap: 10px;
+        }
     }
     .cotiza{
         flex-direction: column-reverse;
@@ -118,6 +129,10 @@
     .vende *, .cotiza *{
         width: 100%;
     }
-
+    .vende{
+        .info__venta{
+            padding: 1rem;
+        }
+    }
     
 }

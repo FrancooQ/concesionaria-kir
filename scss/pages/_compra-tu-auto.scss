@@ -2,6 +2,7 @@
 
 .titulo__auto{
     background-color: $color-principal;
+    color: white;
 }
 .descrip__auto/* flex para crear caja/row lo pone en vertical/wrap acomoda cuando se achica/justify evenly para alinear el salto entre ellos*/{
     display: flex; 
@@ -19,6 +20,9 @@
         h5{
             text-align: center;
             font-size: 30px;
+        }
+        p{
+            color: white;
         }
     }
     span/* use display block para q sea un bloque*/{
